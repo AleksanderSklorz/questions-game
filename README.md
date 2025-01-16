@@ -22,6 +22,7 @@ Implement a class named QuestionsGame with following functions:
 - `registerRiddles` - allows to add multiple riddles with correct answers. To simplify please ensure each answer is single word. If any registered answer is not single word then throw exception.
 - `getNextQuestion` - returns next question registered in “registerRiddle” function randomly. Please ensure that you won't get the same next question if question was already asked.
 - `validateAnswers` - check if answered responses on asked questions are correct. Please ensure it compares answer case insensitively. This function should to use configurable `threshold` field from `QuestionGame` class so then function returns true if number of correct answers is greater or equal to threshold. If threshold is not set then it should return true if all answers are correct.
+- `giveHint` - gives hint for the answer. Should be implemented by subclasses. 
 
 ## Task 2
 We want to have game with 3 difficulty levels - `Easy`, `Medium`, `Hard`. We want to have class created in Task 1 as base and then create separated class for each level, for example: for Easy we want to have `EasyQuestionsGame` class. These classes should have following implementation of `giveHint` function:
